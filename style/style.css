@@ -54,7 +54,7 @@ a:hover {
 /* Navbar */
 
 #navbar {
-  position: absolute;
+  position:fixed;
   left: 0;
   width: 100%;
   z-index: 100;
@@ -127,6 +127,7 @@ a:hover {
 .navbar-right a:hover {
     opacity: 0.4 !important;
 }
+
 
 /* About Me */
 #showcase {

@@ -1,13 +1,11 @@
-@media screen and (max-width: 768px) {
-    
-    #navbar {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+@media screen and (max-width: 844px) {
+
+    .home-img {
+        display: none;
     }
 
     #languages {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+        display: none;
     }
 
     #projects-container {
@@ -22,15 +20,9 @@
 }
 
 @media screen and (max-width: 426px) {
-
-    #navbar {
-        display:block;
-        flex-direction: column;
-    }
-
+    
     #languages {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 2rem;
+        display: none;
     }
 
     #projects-container {

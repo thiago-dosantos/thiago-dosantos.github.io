@@ -12,3 +12,12 @@ function frameLooper () {
 
 }
 frameLooper();
+
+
+class MobileNavbar {
+  constructor(mobileMenu) {
+    this.mobileMenu = document.querySelector(mobileMenu);
+    this.navLeft = document.querySelector(mobileMenu);
+    this.navLinks = document.querySelectorAll(mobileMenu);
+  }
+}
