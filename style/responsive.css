@@ -1,7 +1,7 @@
 @media screen and (max-width: 844px) {
 
     nav{
-        display: flex;
+        position: static !important;
         flex-direction: column;
         grid-template-columns: repeat(1, 1fr);
         height: 30vh;

@@ -128,6 +128,9 @@ a:hover {
     opacity: 0.4 !important;
 }
 
+#navbar2 {
+  display: none;
+}
 
 /* About Me */
 #showcase {
