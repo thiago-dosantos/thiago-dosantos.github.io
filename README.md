@@ -10,4 +10,4 @@ Landing page created with the intention of showing my knowledge of front-end lan
 
 **PT-BR**
 
-Landing page criada com intuíto de mostrar meus conhecimento das linguagens de front-end e incluir meus projetos concluídos e em desenvolvimento. Página em constante desenvolvimento e constante mudanças estruturais e visuais. Para uma expiriência completa acesse > http://thiago-dosantos.github.io
+Landing page criada com intuíto de mostrar meus conhecimento das linguagens de front-end e incluir meus projetos concluídos e em desenvolvimento. Página em constante desenvolvimento e constante mudanças estruturais e visuais. Para uma experiência completa acesse > http://thiago-dosantos.github.io
