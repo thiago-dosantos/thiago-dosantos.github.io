@@ -183,6 +183,11 @@
         display: none;
      }
 
-
+     .news-blog-box {
+        margin: 20px 10px;
+     }
      
+     #news-blog {
+        padding: 20px;
+     }
 }
