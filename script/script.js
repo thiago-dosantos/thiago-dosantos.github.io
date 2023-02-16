@@ -87,5 +87,6 @@ $(document).ready(function(){
             animeScroll();
         }, 200));
     })();
+    console.log('teste')
 });
 
