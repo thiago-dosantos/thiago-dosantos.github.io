@@ -697,7 +697,6 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .projects .carousel .card2:hover .box2{
-    transform: scale(1.05);
     opacity: 0.5;
 }
 .projects .carousel .card2 .text{
