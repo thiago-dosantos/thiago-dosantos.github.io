@@ -56,11 +56,15 @@ const Projects: React.FC = () => {
       </nav>
       <section className='gap-24 grid lg:grid-cols-3 gap-y-12 lg:gap-x-8 lg:gap-y-8'>
         {projects.map((projectItem) => (
-            <div className='transform transition-transform duration-300 hover:scale-105'>
-            <Project item={projectItem} key={projectItem.id} />
-            </div>
+          <div 
+            className='transform transition-transform duration-300 hover:scale-105'
+            key={projectItem.id}
+          >
+            <Project item={projectItem} />
+          </div>
         ))}
-        </section>
+      </section>
+
 
     </div>
   );
