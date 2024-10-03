@@ -1,6 +1,6 @@
 "use client";
-import { cn } from "@/lib/utils";
-import { GetPostsResult } from "@/lib/wisp";
+import { cn } from "@/lib/utils"; 
+import { GetPostsResult } from "@/lib/wisp"; 
 import { formatDate } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
@@ -25,7 +25,7 @@ export const LastPost: FunctionComponent<{
         <div className="cursor-default italic tracking-tighter text-xs text-[#F63D3C]">
           {formatDate(post.publishedAt || post.updatedAt, "dd MMM yyyy")}
         </div>
-        <h2 className="font-sans font-semibold tracking-tighter text-primary text-lg font-semibold">
+        <h2 className="font-sans font-semibold tracking-tighter text-primary text-lg">
           <Link href={`/blog/${post.slug}`} className="hover:underline">{post.title}</Link>
         </h2>
         
@@ -39,7 +39,9 @@ export const LastPost: FunctionComponent<{
             </div>
           ))}
         </div>
-        <button className="p-2"><Link href={`/blog/${post.slug}`} className="hover:underline p-2 rounded-lg">Read More</Link></button>
+        <button className="p-2">
+          <Link href={`/blog/${post.slug}`} className="hover:underline p-2 rounded-lg">Read More</Link>
+        </button>
       </div>
     </div>
   );
