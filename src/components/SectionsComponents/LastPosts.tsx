@@ -47,7 +47,6 @@ export const LastPost: FunctionComponent<{
   );
 };
 
-// Componente para exibir os últimos posts
 export const LastsPost: FunctionComponent<{
   posts: GetPostsResult["posts"];
   className?: string;
@@ -56,7 +55,7 @@ export const LastsPost: FunctionComponent<{
     <div
       className={cn(
         "container gap-24 grid lg:grid-cols-3 gap-y-12 lg:gap-x-8 lg:gap-y-8",
-        className // Certifique-se de que a classe está sendo utilizada
+        className
       )}
     >
       {posts.slice(0, 3).map((post) => (
