@@ -8,7 +8,7 @@ const buildConfig = () => {
   const defaultDescription = process.env.NEXT_PUBLIC_BLOG_DESCRIPTION || "Blog about Thiago's portfolio.";
 
   return {
-    baseUrl: process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
+    baseUrl: process.env.NEXT_PUBLIC_BASE_URL || "thiago-dosantos.github.io",
     blog: {
       name,
       copyright,
