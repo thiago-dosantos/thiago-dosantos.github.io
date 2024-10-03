@@ -1,6 +1,5 @@
 const buildConfig = () => {
   const blogId = process.env.NEXT_PUBLIC_BLOG_ID;
-  if (!blogId) throw new Error("NEXT_PUBLIC_BLOG_ID is missing");
   const name = process.env.NEXT_PUBLIC_BLOG_DISPLAY_NAME || "Thiago.";
   const copyright = process.env.NEXT_PUBLIC_BLOG_COPYRIGHT || "Thiago";
   const defaultTitle =
