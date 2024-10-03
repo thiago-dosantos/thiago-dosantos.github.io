@@ -1,7 +1,7 @@
 "use client";
 import { FunctionComponent } from "react";
-import WomanImg from '@/assets/banner-woman2.webp'
 import TypingEffect from "./SectionsComponents/TypingEffect";
+import Image from 'next/image';
 
 export const Hero: FunctionComponent = () => {
   return (
@@ -24,7 +24,12 @@ export const Hero: FunctionComponent = () => {
             </div>
             {/* right */}
             <div className='hidden lg:flex flex-1 justify-end items-end h-full'>
-              <img src={WomanImg.src} alt='' />
+              <Image 
+                src="/assets/banner-woman2.webp" 
+                alt="Description of image" 
+                width={500} 
+                height={300} 
+              />
             </div>
           </div>
         </div>

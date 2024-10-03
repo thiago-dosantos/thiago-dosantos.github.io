@@ -1,20 +1,20 @@
 // skills images
-import SkillImg1 from '@/assets/skills/html5.png';
-import SkillImg2 from '@/assets/skills/css3.png';
-import SkillImg3 from '@/assets/skills/js.png';
-import SkillImg4 from '@/assets/skills/reactjs.png';
-import SkillImg5 from '@/assets/skills/nextjs.png';
-import SkillImg6 from '@/assets/skills/nodejs.png';
-import SkillImg7 from '@/assets/skills/git.png';
-import SkillImg8 from '@/assets/skills/figma.png';
+import SkillImg1 from '/public/assets/skills/html5.png';
+import SkillImg2 from '/public/assets/skills/css3.png';
+import SkillImg3 from '/public/assets/skills/js.png';
+import SkillImg4 from '/public/assets/skills/reactjs.png';
+import SkillImg5 from '/public/assets/skills/nextjs.png';
+import SkillImg6 from '/public/assets/skills/nodejs.png';
+import SkillImg7 from '/public/assets/skills/git.png';
+import SkillImg8 from '/public/assets/skills/figma.png';
 
 // projects images
-import CloneFlix from '@/assets/projects/cloneflix.png';
-import Emailverif from '@/assets/projects/emailverif.png';
-import LinkShotener from '@/assets/projects/LinkShortener.png';
-import AnalogicClock from '@/assets/projects/clockUX.png';
-import FacebookClone from '@/assets/projects/facebookclone.png';
-import Calculator from '@/assets/projects/calculator.png';
+import CloneFlix from '/public/assets/projects/cloneflix.png';
+import Emailverif from '/public/assets/projects/emailverif.png';
+import LinkShotener from '/public/assets/projects/LinkShortener.png';
+import AnalogicClock from '/public/assets/projects/clockUX.png';
+import FacebookClone from '/public/assets/projects/facebookclone.png';
+import Calculator from '/public/assets/projects/calculator.png';
 
 import { StaticImageData } from 'next/image';
 
