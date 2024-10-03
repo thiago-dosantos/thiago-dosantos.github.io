@@ -5,18 +5,15 @@ import { cn } from "@/lib/utils";
 import { projectsData } from '@/data';
 import { projectsNav } from '@/data';
 import { StaticImageData } from 'next/image';
-import Project  from '@/components/SectionsComponents/Project';
-
+import Project from '@/components/SectionsComponents/Project';
 
 interface ProjectType {
-    item: {
-      id: string;
-      image: StaticImageData;
-      name: string;
-      category: string;
-      url: string;
-    };
-  }
+  id: string;
+  image: StaticImageData;
+  name: string;
+  category: string;
+  url: string;
+}
 
 const Projects: React.FC = () => {
   const [item, setItem] = useState<{ name: string }>({ name: 'all' });
@@ -25,9 +22,9 @@ const Projects: React.FC = () => {
 
   useEffect(() => {
     if (item.name === 'all') {
-      setProjects(projectsData);
+      setProjects(projectsData); // Agora isso deve funcionar
     } else {
-      const newProjects = projectsData.filter((project: ProjectType) => {
+      const newProjects = projectsData.filter((project) => {
         return project.category.toLowerCase() === item.name;
       });
       setProjects(newProjects);
@@ -64,8 +61,6 @@ const Projects: React.FC = () => {
           </div>
         ))}
       </section>
-
-
     </div>
   );
 };
