@@ -1,5 +1,5 @@
 "use client";
-import { cn } from "@/lib/utils"; 
+import { cn } from "@/lib/utils";
 import { GetPostsResult } from "@/lib/wisp"; 
 import { formatDate } from "date-fns";
 import Image from "next/image";
@@ -47,6 +47,7 @@ export const LastPost: FunctionComponent<{
   );
 };
 
+// Componente para exibir os últimos posts
 export const LastsPost: FunctionComponent<{
   posts: GetPostsResult["posts"];
   className?: string;
@@ -55,7 +56,7 @@ export const LastsPost: FunctionComponent<{
     <div
       className={cn(
         "container gap-24 grid lg:grid-cols-3 gap-y-12 lg:gap-x-8 lg:gap-y-8",
-        className
+        className // Certifique-se de que a classe está sendo utilizada
       )}
     >
       {posts.slice(0, 3).map((post) => (
