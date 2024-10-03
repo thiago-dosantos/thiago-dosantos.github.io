@@ -3,18 +3,13 @@ import Typed from "typed.js";
 
 const TypingEffect: React.FC = () => {
   useEffect(() => {
-    // Configuração do Typed.js
-    const options: Typed.Options = {
+    const options = {
       strings: ["I Build Web Site", "I'm Web Developer", "I'm Front-End Dev", "I'm Web Designer"],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true,
     };
-
-    // Inicializa o Typed.js
     const typed = new Typed(".typing", options);
-
-    // Cleanup ao desmontar o componente
     return () => {
       typed.destroy();
     };

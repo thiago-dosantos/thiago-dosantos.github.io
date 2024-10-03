@@ -22,7 +22,7 @@ const Projects: React.FC = () => {
 
   useEffect(() => {
     if (item.name === 'all') {
-      setProjects(projectsData); // Agora isso deve funcionar
+      setProjects(projectsData);
     } else {
       const newProjects = projectsData.filter((project) => {
         return project.category.toLowerCase() === item.name;
