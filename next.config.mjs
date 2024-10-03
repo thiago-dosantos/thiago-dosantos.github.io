@@ -13,11 +13,4 @@ const nextConfig = {
   },
 };
 
-module.exports = {
-  env: {
-    NEXT_PUBLIC_BLOG_ID: process.env.NEXT_PUBLIC_BLOG_ID,
-  },
-};
-
-
 export default nextConfig;
