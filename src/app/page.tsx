@@ -1,6 +1,5 @@
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { wisp } from "@/lib/wisp";
 import { Hero } from "@/components/Hero";
 import { Languages } from "@/components/Languages";
 import { Portfolio } from "@/components/Portfolio";
