@@ -1,7 +1,7 @@
-import { BlogPostContent } from "@/components/BlogPostContent";
+import { BlogPostContent } from "@/components/SectionsComponents/BlogPostContent";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { RelatedPosts } from "@/components/RelatedPosts";
+import { RelatedPosts } from "@/components/SectionsComponents/RelatedPosts";
 import { config } from "@/config";
 import { signOgImageUrl } from "@/lib/og-image";
 import { wisp } from "@/lib/wisp";

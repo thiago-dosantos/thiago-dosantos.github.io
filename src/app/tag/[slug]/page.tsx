@@ -1,5 +1,5 @@
-import { BlogPostsPreview } from "@/components/BlogPostPreview";
-import { BlogPostsPagination } from "@/components/BlogPostsPagination";
+import { BlogPostsPreview } from "@/components/SectionsComponents/BlogPostPreview";
+import { BlogPostsPagination } from "@/components/SectionsComponents/BlogPostsPagination";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Badge } from "@/components/ui/badge";

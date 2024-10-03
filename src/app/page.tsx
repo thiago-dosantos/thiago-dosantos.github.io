@@ -1,21 +1,19 @@
-import { BlogPostsPreview } from "@/components/BlogPostPreview";
-import { BlogPostsPagination } from "@/components/BlogPostsPagination";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { wisp } from "@/lib/wisp";
+import { Hero } from "@/components/Hero";
+import { Languages } from "@/components/Languages";
+import { Portfolio } from "@/components/Portfolio";
+import LastPostsBlog  from "@/components/LastPostsBlog";
 
-const Page = async ({
-  searchParams,
-}: {
-  searchParams: { [key: string]: string | string[] | undefined };
-}) => {
-  const page = searchParams.page ? parseInt(searchParams.page as string) : 1;
-  const result = await wisp.getPosts({ limit: 6, page });
+const Page = async () => {
   return (
     <div className="container mx-auto px-5 mb-10">
       <Header />
-      <BlogPostsPreview posts={result.posts} />
-      <BlogPostsPagination pagination={result.pagination} />
+      <Hero />
+      <Languages />
+      <Portfolio />
+      <LastPostsBlog searchParams={{}} />
       <Footer />
     </div>
   );
