@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { cn } from "@/lib/utils";
 import { projectsData } from '@/data';
 import { projectsNav } from '@/data';
 import { StaticImageData } from 'next/image';
