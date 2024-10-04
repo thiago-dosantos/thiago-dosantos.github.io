@@ -4,9 +4,7 @@ import {
   FiLayout,
   FiSettings,
   FiPenTool,
-  FiTag,
   FiMail,
-  FiMapPin,
   FiLinkedin
 } from 'react-icons/fi';
 

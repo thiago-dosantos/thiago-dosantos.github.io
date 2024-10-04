@@ -17,7 +17,6 @@ export const Services: FunctionComponent = () => {
             <div className='grid lg:grid-cols-3 gap-6'>
                 {services.map((service, index)=> {
                     const {icon, name, description} = service;
-
                     return <div className='bg-tertiary p-6 rounded-2xl border shadow-lg' key={index}>
                         <div className='text-customblue rounded-sm w-12 h12 flex justify-center items-center mb-24 text-[28px]'>{icon}</div>
                         <h4 className='text-xl font-medium mb-2'>{name}</h4>

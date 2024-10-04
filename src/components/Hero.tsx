@@ -20,7 +20,7 @@ export const Hero: FunctionComponent = () => {
               </div>
               
 
-              <p className='pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-sm text-center lg:text-center'>This is my portfolio <br />for show my projects. <br /><small>(under development)</small></p>
+              <p className='pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-sm text-center lg:text-center'>This is my portfolio <br />to show my projects. <br /><small>(under development)</small></p>
             </div>
             {/* right */}
             <div className='hidden lg:flex flex-1 justify-end items-end h-full'>
