@@ -23,9 +23,9 @@ export const AboutMe: FunctionComponent = () => {
                         <TypingEffect />
                     </p>
                     <p className='mb-8'>
-                        I'm currently graduating in software engineering and work as a helpdesk and web developer, 
+                        I&apos;m currently graduating in software engineering and work as a helpdesk and web developer, 
                         using HTML, CSS, JavaScript and PHP languages. I also work with marketplace construction in Magento 2 and MySQL database handling.
-                        I'm a proactive person who is always in search of knowledge and new experiences.
+                        I&apos;m a proactive person who is always in search of knowledge and new experiences.
                     </p>
                 </div>
                 <div className= "flex space-x-4">
