@@ -45,7 +45,7 @@ export const Navigation: FunctionComponent = () => {
             </a>
             <span
               className={cn(
-                "absolute left-0 right-0 h-1 bg-teal-400 transition-transform duration-300 ease-in-out transform scale-x-0",
+                "absolute left-0 right-0 h-1 bg-[#F63D3C] transition-transform duration-300 ease-in-out transform scale-x-0",
                 "group-hover:scale-x-100",
                 "bottom-0 z-10 rounded",
                 "origin-left"

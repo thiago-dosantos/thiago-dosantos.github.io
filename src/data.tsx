@@ -1,3 +1,15 @@
+import {
+  FiInstagram,
+  FiGithub,
+  FiLayout,
+  FiSettings,
+  FiPenTool,
+  FiTag,
+  FiMail,
+  FiMapPin,
+  FiLinkedin
+} from 'react-icons/fi';
+
 // skills images
 import SkillImg1 from '/public/assets/skills/html5.png';
 import SkillImg2 from '/public/assets/skills/css3.png';
@@ -118,3 +130,44 @@ export const projectsData = [
       name: 'branding',
     },
   ];
+
+  export const social = [
+    {
+      icon: <FiInstagram />,
+      href: 'https://instagram.com/losanthiago',
+    },
+    {
+      icon: <FiLinkedin />,
+      href: 'https://www.linkedin.com/in/thiago-dosantos/',
+    },
+    {
+      icon: <FiGithub />,
+      href: 'https://github.com/thiago-dosantos',
+    },
+    {
+      icon: <FiMail />,
+      href: 'mailto:saint.rouch@gmail.com',
+    },
+  ];
+
+  // services
+export const services = [
+  {
+    icon: <FiLayout />,
+    name: 'Web Development',
+    description:
+      'I create engaging and functional online experiences for my clients. This includes everything from building attractive and responsive websites to developing custom web applications',
+  },
+  {
+    icon: <FiSettings />,
+    name: 'Maintenance',
+    description:
+      'My job involves constantly updating and optimizing existing code, fixing bugs and implementing performance improvements.',
+  },
+  {
+    icon: <FiPenTool />,
+    name: 'Agile Master',
+    description:
+      'I lead teams in implementing agile methodologies to ensure high-quality deliveries and added value to customers.',
+  },
+];

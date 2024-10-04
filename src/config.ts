@@ -1,13 +1,13 @@
 const buildConfig = () => {
   const blogId = process.env.NEXT_PUBLIC_BLOG_ID;
-  const name = process.env.NEXT_PUBLIC_BLOG_DISPLAY_NAME || "Thiago.";
+  const name = process.env.NEXT_PUBLIC_BLOG_DISPLAY_NAME || "Thiago dos Santos.";
   const copyright = process.env.NEXT_PUBLIC_BLOG_COPYRIGHT || "Thiago";
   const defaultTitle =
     process.env.NEXT_DEFAULT_METADATA_DEFAULT_TITLE || "Portfolio by Thiago";
   const defaultDescription = process.env.NEXT_PUBLIC_BLOG_DESCRIPTION || "Blog about Thiago's portfolio.";
 
   return {
-    baseUrl: process.env.NEXT_PUBLIC_BASE_URL || "https://thiago-dosantos.github.io",
+    baseUrl: process.env.NEXT_PUBLIC_BASE_URL || "https://thiago-dosantos.vercel.app/",
     blog: {
       name,
       copyright,

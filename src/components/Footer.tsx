@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FunctionComponent } from "react";
 import { DarkModeToggle } from "./SectionsComponents/DarkModeToggle";
 import { Button } from "./ui/button";
+import { social } from "@/data";
 
 export const Footer: FunctionComponent = () => {
   return (
@@ -13,12 +14,13 @@ export const Footer: FunctionComponent = () => {
         <div className="text-sm text-muted-foreground">
           © {config.blog.copyright} {new Date().getFullYear()}
         </div>
-        <div className="text-xs text-muted-foreground hidden lg:block">
-          <Link
-            href={`https://wisp.blog/?utm_source=next-js-template&utm_medium=web&utm_campaign=${config.baseUrl}`}
-          >
-            Blog powered by wisp
-          </Link>
+        <div className="text-xs text-muted-foreground hidden lg:flex space-x-6">
+          {social.map((item, index) => {
+            const {href, icon} = item;
+              return (
+                <a className='hover:text-[#F63D3C] text-base' href={href} key={index}>{icon}</a>
+              )
+          })}
         </div>
         <div>
           <Link href="/rss">

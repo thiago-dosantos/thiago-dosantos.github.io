@@ -15,7 +15,7 @@ export const Hero: FunctionComponent = () => {
               <p className='text-2xl mb-[22px]'>Hello my name is <span className='text-customblue'> Thiago </span> and</p>
               <h1 className='text-4xl leading-[44px] text-start mb:text-5xl md:leading-tight lg:text-5xl lg:leading-[1.2] font-bold md:tracking-[-2px]'> {' '}
               </h1>
-              <div>
+              <div className="text-4xl lg:text-5xl">
               <TypingEffect />
               </div>
               
