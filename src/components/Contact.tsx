@@ -115,8 +115,8 @@ export const Contact: FunctionComponent = () => {
           <div>
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             <p className="text-gray-600 dark:text-gray-300 mb-8">
-              I'm always open to discussing new opportunities, interesting projects,
-              or potential collaborations. Don't hesitate to get in touch!
+                I&apos;m always open to discussing new opportunities, interesting projects,
+                or potential collaborations. Don&apos;t hesitate to get in touch!
             </p>
 
             <div className="space-y-6">

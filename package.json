@@ -27,6 +27,7 @@
     "react-markdown": "^9.0.1",
     "rss": "^1.2.2",
     "sanitize-html": "^2.13.0",
+    "sharp": "^0.34.5",
     "t-writer.js": "^1.0.4",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
