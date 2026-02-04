@@ -17,37 +17,54 @@ interface MenuItem {
   name: string;
   href: string;
   openInNewTab?: boolean;
+  isAnchor?: boolean;
 }
 
 const menuItems: MenuItem[] = [
   { name: "Home", href: "/" },
-  { name: "Blog", href: "/blog" },
-  { name: "About", href: "/about" },
+  { name: "About", href: "#about", isAnchor: true },
+  { name: "Skills", href: "#skills", isAnchor: true },
+  { name: "Workflow", href: "#workflow", isAnchor: true },
+  { name: "Projects", href: "#portfolio", isAnchor: true },
+  { name: "FAQ", href: "#faq", isAnchor: true },
+  { name: "Contact", href: "#contact", isAnchor: true },
 ];
+
+const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  if (href.startsWith("#")) {
+    e.preventDefault();
+    const id = href.replace("#", "");
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+};
 
 export const Navigation: FunctionComponent = () => {
   const pathname = usePathname();
 
   return (
     <nav>
-      <div className="hidden md:flex items-center">
+      <div className="hidden md:flex items-end h-full">
         {menuItems.map((item) => (
-          <div key={item.href} className="relative ml-4 md:ml-8 group pb-1">
+          <div key={item.href} className="relative group">
             <a
               href={item.href}
+              onClick={(e) => handleScroll(e, item.href)}
               target={item.openInNewTab ? "_blank" : "_self"}
               className={cn(
-                "", 
-                pathname === item.href && "font-semibold"
+                "cursor-pointer px-3 py-1 text-sm font-medium transition-colors hover:text-[#F63D3C]",
+                pathname === item.href && "text-[#F63D3C] font-semibold"
               )}
             >
               {item.name}
             </a>
             <span
               className={cn(
-                "absolute left-0 right-0 h-1 bg-[#F63D3C] transition-transform duration-300 ease-in-out transform scale-x-0",
+                "absolute left-3 right-3 h-0.5 bg-[#F63D3C] transition-transform duration-300 ease-in-out transform scale-x-0",
                 "group-hover:scale-x-100",
-                "bottom-0 z-10 rounded",
+                "-bottom-0.5 z-10 rounded",
                 "origin-left"
               )}
             ></span>
@@ -61,15 +78,16 @@ export const Navigation: FunctionComponent = () => {
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>
-              <SheetDescription>
+              <SheetDescription className="flex flex-col gap-4">
                 {menuItems.map((item) => (
                   <a
                     key={item.href}
                     href={item.href}
+                    onClick={(e) => handleScroll(e, item.href)}
                     target={item.openInNewTab ? "_blank" : "_self"}
                     className={cn(
-                      "block py-2",
-                      pathname === item.href && "font-semibold"
+                      "block py-2 text-lg",
+                      pathname === item.href && "font-semibold text-[#F63D3C]"
                     )}
                   >
                     {item.name}
@@ -86,9 +104,9 @@ export const Navigation: FunctionComponent = () => {
 
 export const Header: FunctionComponent = () => {
   return (
-    <section className="flex items-center justify-between mt-8 md:mt-16 mb-8">
-      <Link href="/">
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tighter leading-tight">
+    <section className="flex items-end justify-between mt-8 md:mt-16 mb-8">
+      <Link href="/" className="pb-1">
+        <h1 className="text-3xl md:text-5xl font-bold tracking-tighter leading-none">
           {config.blog.name}
         </h1>
       </Link>

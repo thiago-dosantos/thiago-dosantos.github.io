@@ -16,7 +16,7 @@ import SkillImg4 from '/public/assets/skills/reactjs.png';
 import SkillImg5 from '/public/assets/skills/nextjs.png';
 import SkillImg6 from '/public/assets/skills/nodejs.png';
 import SkillImg7 from '/public/assets/skills/git.png';
-import SkillImg8 from '/public/assets/skills/figma.png';
+import SkillImg8 from '/public/assets/skills/php.png';
 
 // projects images
 import CloneFlix from '/public/assets/projects/cloneflix.png';
@@ -63,7 +63,7 @@ export const languages: Language[] = [
     image: SkillImg7,
   },
   {
-    name: 'Figma',
+    name: 'PHP',
     image: SkillImg8,
   },
 ];

@@ -5,7 +5,7 @@ import { languages } from '@/data';
 
 export const Languages: FunctionComponent = () =>  {
   return (
-    <section className='bg-tertiary py-12'>
+    <section id="skills" className='bg-tertiary py-12'>
       <div className='container mx-auto'>
         <div className='grid grid-cols-8 md:grid-flow-row'>
           {languages.map((language, index) => (
